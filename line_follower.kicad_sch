@@ -4304,6 +4304,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 172.72 115.57)
@@ -4352,6 +4448,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c59ede1b-6d5f-4108-bb8a-ad72d280fc90")
+	)
+	(junction
+		(at 262.89 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cca2f72d-4a6c-45b8-86ea-a9a57cfc0511")
 	)
 	(junction
 		(at 265.43 53.34)
@@ -4690,6 +4792,16 @@
 			(type default)
 		)
 		(uuid "5af4226a-14f9-4807-a723-3a8b0abdb72e")
+	)
+	(wire
+		(pts
+			(xy 262.89 48.26) (xy 262.89 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d9b4b0b-a9d6-4348-8db4-ad90203e4ec2")
 	)
 	(wire
 		(pts
@@ -5053,7 +5165,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 46.99) (xy 262.89 50.8)
+			(xy 262.89 46.99) (xy 262.89 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5182,6 +5294,18 @@
 			(type none)
 		)
 		(uuid 1a0c2297-e0ac-44be-b3c3-00cf3da097fc)
+	)
+	(rectangle
+		(start 20.32 156.21)
+		(end 99.06 209.55)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 52f593ab-480c-441c-b9bc-805d1726ce1d)
 	)
 	(rectangle
 		(start 313.69 38.1)
@@ -5336,6 +5460,16 @@
 			)
 		)
 		(uuid "05936096-b019-41c3-87d5-394c12d6d25b")
+	)
+	(text "LEDS FOR CALIBRATION STATUS"
+		(exclude_from_sim no)
+		(at 58.674 213.106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "174a2cb9-9e1c-451d-9e37-e169abe66fed")
 	)
 	(text "HC05 \nBLUETOOTH\n"
 		(exclude_from_sim no)
@@ -5586,13 +5720,15 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
 		(uuid "11160053-bc57-429f-97bb-e30740ef71b7")
 	)
-	(label "CALIB"
-		(at 236.22 81.28 180)
+	(label "PB13"
+		(at 63.5 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5601,7 +5737,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "118bc84b-2c49-4783-a6cf-3fe842f08bcb")
+		(uuid "15112449-7c5e-44f9-a247-1973e3315368")
 	)
 	(label "GND_STM"
 		(at 87.63 63.5 180)
@@ -5682,6 +5818,16 @@
 			(justify right bottom)
 		)
 		(uuid "248576a3-8c3b-49fc-a50e-3a583df52c7e")
+	)
+	(label "BUCK_IN"
+		(at 227.33 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "248b43e1-1e6e-44b7-93d9-54b25c7f60ec")
 	)
 	(label "GND_STM"
 		(at 176.53 91.44 0)
@@ -5794,6 +5940,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -5829,15 +5977,15 @@
 		)
 		(uuid "3762f91f-f7c6-4698-9cb5-ce108cb20859")
 	)
-	(label "FUSE "
-		(at 227.33 44.45 0)
+	(label "FUSE_OUT "
+		(at 168.91 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "3962dd3e-b50e-42e1-9e6a-0b1fb665d2c0")
+		(uuid "384deb34-960c-4de1-b13d-4520f679fec9")
 	)
 	(label "VOUT-"
 		(at 199.39 199.39 0)
@@ -5935,6 +6083,18 @@
 		)
 		(uuid "47e4e11d-1c61-4931-b0c1-b2a39e87a41f")
 	)
+	(label "CALIB"
+		(at 278.13 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "482062e0-2ceb-4dd8-9565-54e9ea5e41da")
+	)
 	(label "GND_STM"
 		(at 27.94 119.38 180)
 		(effects
@@ -5970,18 +6130,6 @@
 			(justify right bottom)
 		)
 		(uuid "4a82addc-7d3b-4a04-b6ed-74c3e5736976")
-	)
-	(label "RIGHT"
-		(at 236.22 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "4a92f73e-6c24-4549-a12a-062720ce9992")
 	)
 	(label "OUT1"
 		(at 274.32 160.02 180)
@@ -6091,18 +6239,6 @@
 		)
 		(uuid "52b5b95a-e58f-4cf9-97c1-c32666208292")
 	)
-	(label "IN3"
-		(at 233.68 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "54f4e9fc-56df-406c-8d7e-53c482fd6b8a")
-	)
 	(label "5V_STM"
 		(at 36.83 87.63 180)
 		(effects
@@ -6126,6 +6262,30 @@
 			(justify right bottom)
 		)
 		(uuid "56fb69e8-91cf-4616-822f-e79cc99a5460")
+	)
+	(label "IN2"
+		(at 234.95 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "5aa4c08d-f4b4-4f28-b517-33f3bab09482")
+	)
+	(label "PB2"
+		(at 88.9 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b344ad7-ecb2-42be-b4fb-670fdbaca6f4")
 	)
 	(label "5V_STM"
 		(at 92.71 115.57 180)
@@ -6185,11 +6345,25 @@
 		)
 		(uuid "606d21a0-93ae-4872-bafa-c5bfc8563208")
 	)
+	(label "PA12"
+		(at 40.64 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "625540a6-b169-49ca-a9b3-fb7ea493e658")
+	)
 	(label "PB12"
 		(at 242.57 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -6224,6 +6398,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -6316,6 +6492,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -6411,6 +6589,30 @@
 		)
 		(uuid "826ade5c-3a8d-4714-a0b2-64df465d3fbd")
 	)
+	(label "IN4"
+		(at 234.95 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "8272e918-978b-4ea1-95ca-f0d0d740a6d9")
+	)
+	(label "LEFT "
+		(at 280.67 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "834aef5f-7798-40c2-b6d6-c1e3b7b43f51")
+	)
 	(label "IN2"
 		(at 304.8 167.64 0)
 		(effects
@@ -6432,6 +6634,18 @@
 			(justify right bottom)
 		)
 		(uuid "8638a495-69ce-49f4-80e1-64314b0a0581")
+	)
+	(label "PB14"
+		(at 88.9 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "87b5d4bf-b1c3-4717-96a7-aed8452bad9a")
 	)
 	(label "IN4"
 		(at 304.8 157.48 0)
@@ -6475,6 +6689,18 @@
 		)
 		(uuid "8e591052-7e42-4580-baa4-6e823c81e1b5")
 	)
+	(label "PB3"
+		(at 88.9 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "8f289462-518c-436d-9cf0-a902fbbc9b2a")
+	)
 	(label "3.3V_STM"
 		(at 271.78 87.63 0)
 		(effects
@@ -6497,6 +6723,18 @@
 		)
 		(uuid "91449f18-57cc-4f57-9904-09b1b0eeac0e")
 	)
+	(label "PB4"
+		(at 40.64 194.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "936cb791-51c6-4531-a455-e737bde74aa0")
+	)
 	(label "PA5"
 		(at 176.53 85.09 0)
 		(effects
@@ -6509,16 +6747,6 @@
 		)
 		(uuid "93803a88-d297-49bc-90f1-dee44feca6f8")
 	)
-	(label "FUSE "
-		(at 161.29 179.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9501d10c-3c7b-43a3-b8b6-f1a4ec80d2e1")
-	)
 	(label "GND_STM"
 		(at 271.78 85.09 0)
 		(effects
@@ -6528,6 +6756,18 @@
 			(justify left bottom)
 		)
 		(uuid "969bc04f-d296-4bb8-89f0-d869e7f1a8e7")
+	)
+	(label "IN3"
+		(at 234.95 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "977ed76f-47b6-486a-b1b1-b7bd96c259d3")
 	)
 	(label "GND"
 		(at 165.1 199.39 180)
@@ -6573,6 +6813,18 @@
 		)
 		(uuid "9bf94fa2-67e0-4a93-9000-6bb86d3f92de")
 	)
+	(label "EEP"
+		(at 234.95 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c0cb7c2-adb5-4de1-a010-f12df4aba30e")
+	)
 	(label "VBAT_STM"
 		(at 271.78 130.81 0)
 		(effects
@@ -6583,11 +6835,25 @@
 		)
 		(uuid "9c57d3c9-e114-47c6-89c1-89b699e51a19")
 	)
+	(label "PA15"
+		(at 63.5 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d80629b-5e73-4cc0-bb78-64707dd7e96e")
+	)
 	(label "PB4"
 		(at 242.57 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -6659,30 +6925,6 @@
 		)
 		(uuid "a750468c-1eb4-4ed8-a4bb-dd94830e5609")
 	)
-	(label "IN4"
-		(at 234.95 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "a7714775-ff83-4faf-b3b2-dd0e4b3686e7")
-	)
-	(label "IN1"
-		(at 233.68 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "a795484c-9e19-4981-ae68-9baf72763162")
-	)
 	(label "3.3V_STM"
 		(at 242.57 129.54 180)
 		(effects
@@ -6740,6 +6982,18 @@
 			(justify left bottom)
 		)
 		(uuid "afd9ead4-fb87-4653-81f0-955aadea96e0")
+	)
+	(label "RIGHT"
+		(at 280.67 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1c8462d-b4c2-4b47-9912-2f15d51fe774")
 	)
 	(label "VOUT+"
 		(at 199.39 196.85 0)
@@ -6822,6 +7076,18 @@
 			(justify right bottom)
 		)
 		(uuid "bacbaf0b-3e80-452d-9988-878ca6524c11")
+	)
+	(label "PB10"
+		(at 64.77 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbcb66b4-97df-4a19-aec7-3a99f2df4c54")
 	)
 	(label "BAT+"
 		(at 262.89 50.8 180)
@@ -6920,30 +7186,6 @@
 			(justify left bottom)
 		)
 		(uuid "cd181857-c6f8-4077-9cfd-100888d2d569")
-	)
-	(label "IN2"
-		(at 233.68 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "cdf2cf0e-aebf-4567-98da-d8dbcb119297")
-	)
-	(label "STRAIGHT"
-		(at 236.22 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "cf625686-b567-4c3c-9d9c-f3d7bd1cd69f")
 	)
 	(label "PC15"
 		(at 271.78 123.19 0)
@@ -7049,16 +7291,6 @@
 		)
 		(uuid "dc2ab77c-2ca4-453c-ad02-967d93c48f97")
 	)
-	(label "BAT+"
-		(at 217.17 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dc4b20b2-ea69-4e72-a84c-0a91e47bce51")
-	)
 	(label "GND_STM"
 		(at 81.28 172.72 180)
 		(effects
@@ -7086,6 +7318,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -7102,6 +7336,16 @@
 			(justify left bottom)
 		)
 		(uuid "e2d93226-d8b3-4b9d-8c1f-d396f07a9393")
+	)
+	(label "FUSE_OUT "
+		(at 217.17 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3c064f9-44ce-43f9-a026-442a8dee039e")
 	)
 	(label "GND_STM"
 		(at 321.31 165.1 270)
@@ -7120,6 +7364,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right bottom)
 		)
@@ -7191,18 +7437,6 @@
 		)
 		(uuid "ef16febd-b660-4769-88d8-181af542c964")
 	)
-	(label "EEP"
-		(at 234.95 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "ef42741a-bb64-442e-b6cd-aa217b230ea4")
-	)
 	(label "PA3"
 		(at 57.15 86.36 0)
 		(effects
@@ -7214,6 +7448,16 @@
 			(justify left bottom)
 		)
 		(uuid "f023e7f7-00aa-454f-ae00-bedb844c520d")
+	)
+	(label "BAT+"
+		(at 161.29 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f0504176-17a9-47d3-a611-eeca99f20114")
 	)
 	(label "VIN+"
 		(at 173.99 196.85 180)
@@ -7235,15 +7479,17 @@
 		)
 		(uuid "f46be5ba-41c6-4d54-b177-45abc36a6203")
 	)
-	(label "BUCK_IN"
-		(at 168.91 179.07 0)
+	(label "STRAIGHT"
+		(at 280.67 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
-		(uuid "f95c3807-f728-4a96-affb-caf665e75fc1")
+		(uuid "f80356ac-c200-4db7-aafb-f9b9effeb511")
 	)
 	(label "5V_STM"
 		(at 38.1 58.42 180)
@@ -7274,10 +7520,24 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
 		(uuid "fd713e9d-d6b0-46fc-b9ad-3108b1ea8337")
+	)
+	(label "IN1"
+		(at 234.95 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "fdacb9b1-2ce5-4271-843d-d338aecee3c3")
 	)
 	(label "STATE"
 		(at 332.74 41.91 180)
@@ -7289,8 +7549,8 @@
 		)
 		(uuid "fe14392f-5b5c-42b0-baa8-0ef0a7884648")
 	)
-	(label "LEFT "
-		(at 236.22 83.82 180)
+	(label "PB12"
+		(at 40.64 165.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7299,7 +7559,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ff9ec48c-1469-46d5-b75f-8b92df206c1a")
+		(uuid "ff0192c0-a6ce-4c93-91e8-5a80d37035ec")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7363,6 +7623,73 @@
 			(project "line_follower"
 				(path "/33f398db-e9fd-40e3-b7af-8ed3645b8356"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 261.62 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05b1cc55-cefa-4db1-8f98-28d6b4f9ecec")
+		(property "Reference" "#FLG01"
+			(at 261.62 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 261.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f36b47a0-4043-478f-83ce-500fd5b36292")
+		)
+		(instances
+			(project ""
+				(path "/33f398db-e9fd-40e3-b7af-8ed3645b8356"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -11269,6 +11596,74 @@
 			(project "line_follower"
 				(path "/33f398db-e9fd-40e3-b7af-8ed3645b8356"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 262.89 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a6415cc-c1a2-4bdc-aef4-33707b20e1be")
+		(property "Reference" "#FLG02"
+			(at 260.985 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 259.08 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 262.89 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8ac01a7-d338-4056-a614-0ebb0a79b6b9")
+		)
+		(instances
+			(project "line_follower"
+				(path "/33f398db-e9fd-40e3-b7af-8ed3645b8356"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
