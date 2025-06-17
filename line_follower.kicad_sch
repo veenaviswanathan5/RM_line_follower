@@ -6626,6 +6626,16 @@
 		)
 		(uuid "15d4b1f6-9108-425c-8560-b0e487cd2aa1")
 	)
+	(label "3.3V_STM"
+		(at 287.02 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "162c40d5-3a9c-4917-97a6-a5c3ccd4bc71")
+	)
 	(label "GND"
 		(at 243.84 138.43 180)
 		(effects
@@ -6814,7 +6824,7 @@
 		)
 		(uuid "29398dd6-378a-4cc4-973d-23d8453fd654")
 	)
-	(label "5V_STM"
+	(label "3.3V_STM"
 		(at 287.02 104.14 180)
 		(effects
 			(font
@@ -6992,16 +7002,6 @@
 		)
 		(uuid "38dc8b40-33aa-4e77-9232-a5e72320c876")
 	)
-	(label "5V_STM"
-		(at 312.42 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3992b89b-0792-4202-80d0-9a8b56823182")
-	)
 	(label "PA6"
 		(at 217.17 137.16 0)
 		(effects
@@ -7126,6 +7126,16 @@
 		)
 		(uuid "44026704-05f8-4116-a7fe-54e452c21fdc")
 	)
+	(label "3.3V_STM"
+		(at 312.42 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4449da15-608f-420c-a290-866363177205")
+	)
 	(label "PB2"
 		(at 290.83 184.15 180)
 		(effects
@@ -7179,6 +7189,16 @@
 			(justify right bottom)
 		)
 		(uuid "47f93ce3-877e-4b29-913d-d39db0a6e1e8")
+	)
+	(label "3.3V_STM"
+		(at 299.72 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "48a48429-7902-496c-9f2d-4641d09134bd")
 	)
 	(label "3.3V_STM"
 		(at 181.61 129.54 0)
@@ -7262,16 +7282,6 @@
 		)
 		(uuid "4eb3c2a0-3312-47df-827e-5cada9d65448")
 	)
-	(label "5V_STM"
-		(at 299.72 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4f98add9-84f6-4188-92a6-c8f19061834f")
-	)
 	(label "VCC_DRV"
 		(at 73.66 217.17 0)
 		(effects
@@ -7293,6 +7303,16 @@
 			(justify right bottom)
 		)
 		(uuid "50455451-da86-4b9c-b9c7-95a21fb43339")
+	)
+	(label "3.3V_STM"
+		(at 312.42 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50908dba-6733-4653-89bb-4494349a0032")
 	)
 	(label "PA3"
 		(at 187.96 58.42 0)
@@ -7327,16 +7347,6 @@
 			(justify right bottom)
 		)
 		(uuid "542787ac-80d7-44a6-9194-305f80b9b72e")
-	)
-	(label "5V_STM"
-		(at 287.02 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "567ccb94-1cbd-4907-a4e2-fe0f00331c16")
 	)
 	(label "RPR_ANO"
 		(at 196.85 111.76 180)
@@ -7658,6 +7668,16 @@
 			(justify right bottom)
 		)
 		(uuid "80336a0c-a9c4-45c7-aa45-900d8a364677")
+	)
+	(label "3.3V_STM"
+		(at 299.72 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "80b38935-382f-41de-a6a7-50a8584d809d")
 	)
 	(label "PA11"
 		(at 158.75 46.99 180)
@@ -8011,6 +8031,26 @@
 		)
 		(uuid "9e4a206c-b4dc-48ad-a04f-7ed67caec90c")
 	)
+	(label "3.3V_STM"
+		(at 299.72 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a030f932-bf5e-429a-add4-bae1206d622e")
+	)
+	(label "3.3V_STM"
+		(at 312.42 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a19a4ae2-d1f0-4917-86fe-16fbb1ca02b5")
+	)
 	(label "IN1"
 		(at 73.66 209.55 0)
 		(effects
@@ -8175,16 +8215,6 @@
 		)
 		(uuid "b12d7664-78fc-4830-913a-c01525d1e186")
 	)
-	(label "5V_STM"
-		(at 312.42 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b2241197-612f-4c66-9995-e868e4d3ffae")
-	)
 	(label "VOUT+"
 		(at 55.88 69.85 0)
 		(effects
@@ -8327,16 +8357,6 @@
 		)
 		(uuid "c239d432-34d2-4850-830c-f0bd7f6ce1f2")
 	)
-	(label "5V_STM"
-		(at 299.72 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c70c6fb3-84cb-4c65-ab39-f5bf45eef46a")
-	)
 	(label "PA2"
 		(at 149.86 179.07 0)
 		(effects
@@ -8414,6 +8434,16 @@
 			(justify right bottom)
 		)
 		(uuid "cd970b66-32fc-4633-bceb-2a3bbe90727e")
+	)
+	(label "3.3V_STM"
+		(at 287.02 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d04ac4d7-51c3-465a-86e0-bfd6b72e1526")
 	)
 	(label "PC15"
 		(at 187.96 71.12 0)
@@ -8522,16 +8552,6 @@
 			(justify right bottom)
 		)
 		(uuid "dd1b4ede-8381-493f-8290-09277026ac1b")
-	)
-	(label "5V_STM"
-		(at 312.42 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "de0195cc-35fa-46e5-a4e4-a99c1e9a25a4")
 	)
 	(label "5V_STM"
 		(at 121.92 147.32 180)
@@ -8723,16 +8743,6 @@
 		)
 		(uuid "edaad0ca-294e-4e4f-b661-8c4854a92bcc")
 	)
-	(label "5V_STM"
-		(at 299.72 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ee1064a7-142f-4ce7-b31d-28735018e5e2")
-	)
 	(label "pow_led-"
 		(at 102.87 74.93 0)
 		(effects
@@ -8794,16 +8804,6 @@
 			(justify right bottom)
 		)
 		(uuid "f5fd414c-1270-4069-aaef-465647e39a8d")
-	)
-	(label "5V_STM"
-		(at 287.02 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f64f31bf-0911-4cb4-89db-4c7ad7d66e84")
 	)
 	(label "5V_STM"
 		(at 229.87 38.1 0)
