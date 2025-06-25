@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|95758000|225044000|99788032-143f-413a-b9d8-20286c71214e|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -516,7 +521,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "D:/ROBO/Line Follower Gerber Files/",
+      "plot": "D:/ROBO/line_follower_final_gerber_files/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
